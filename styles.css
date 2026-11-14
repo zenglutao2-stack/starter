@@ -1,0 +1,103 @@
+:root {
+  --bg: #0f1420;
+  --card: #161d2e;
+  --ink: #e8edf7;
+  --ink-dim: #93a0b8;
+  --accent: #6ea8fe;
+  --line: #26314a;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(1200px 600px at 50% -10%, #1b2740, var(--bg));
+  color: var(--ink);
+  font: 16px/1.6 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 620px;
+  padding: 40px 36px 28px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: var(--ink-dim);
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: 28px;
+  line-height: 1.35;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.lede {
+  margin: 0 0 28px;
+  color: var(--ink-dim);
+}
+
+code {
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: #0c1220;
+  border: 1px solid var(--line);
+  font-size: 0.9em;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #08111f;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.out {
+  color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+footer {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-dim);
+  font-size: 13px;
+}
